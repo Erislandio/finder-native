@@ -1,9 +1,14 @@
-import React from 'react';
-import { NativeRouter, Route } from 'react-router-native';
+import { createStackNavigator } from 'react-navigation-stack';
+import { createAppContainer } from 'react-navigation';
 import { LoginScreen } from './screens/Login/Login';
 
-export const AppIndex = () => (
-	<NativeRouter>
-		<Route exact path="/" component={LoginScreen} />
-	</NativeRouter>
+export const Routes = createAppContainer(
+	createStackNavigator({
+		Login: {
+			screen: LoginScreen,
+			navigationOptions: {
+				headerShown: false
+			}
+		}
+	})
 );
