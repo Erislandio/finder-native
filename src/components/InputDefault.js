@@ -6,7 +6,7 @@ export const InputDefault = ({ placeholder, onChange, type, secure }) => (
 		placeholder={placeholder}
 		style={styles.input}
 		secureTextEntry={secure}
-		onChange={onChange}
+		onChangeText={(text) => onChange(text)}
 		keyboardType={type}
 	/>
 );
@@ -16,9 +16,10 @@ const styles = StyleSheet.create({
 		width: '100%',
 		backgroundColor: '#fff',
 		paddingHorizontal: 20,
-		paddingVertical: 10,
+		paddingVertical: 12.5,
 		borderRadius: 8,
 		borderWidth: 1,
-		borderColor: '#dedede'
+		borderColor: '#dedede',
+		marginBottom: 10
 	}
 });
