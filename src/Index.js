@@ -11,14 +11,16 @@ const Stack = createStackNavigator();
 function Routes() {
 	return (
 		<NavigationContainer>
-			<Stack.Navigator initialRouteName="/login">
+			<Stack.Navigator initialRouteName="login">
 				<Stack.Screen
 					name="login"
 					component={LoginScreen}
 					options={{
-						headerShown: false,
 						animationEnabled: true,
-						animationTypeForReplace: 'push'
+						animationTypeForReplace: 'push',
+						cardShadowEnabled: true,
+						gestureDirection: 'horizontal',
+						gestureEnabled: true
 					}}
 				/>
 				<Stack.Screen
@@ -26,7 +28,10 @@ function Routes() {
 					component={HomeScreen}
 					options={{
 						animationEnabled: true,
-						animationTypeForReplace: 'push'
+						animationTypeForReplace: 'push',
+						cardShadowEnabled: true,
+						gestureDirection: 'horizontal',
+						gestureEnabled: true
 					}}
 				/>
 			</Stack.Navigator>

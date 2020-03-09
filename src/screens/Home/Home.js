@@ -5,7 +5,7 @@ import { Container } from '../../components/Container';
 export const HomeScreen = ({ navigation }) => {
 	return (
 		<Container>
-			<Text onPress={() => navigation.push('login')}>Login</Text>
+			<Text onPress={() => navigation.push('login')}>Home</Text>
 		</Container>
 	);
 };
