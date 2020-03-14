@@ -28,6 +28,9 @@
     },
     "android": {
       "package": "com.native.finder"
-    }
-  }
+    },
+    "entryPoint": "node_modules/expo/AppEntry.js"
+  },
+  "displayName": "Finder",
+  "name": "Finder"
 }

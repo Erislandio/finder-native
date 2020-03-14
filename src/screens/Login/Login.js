@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import {
   KeyboardAvoidingView,
   Text,
-  View,
   Animated,
   Keyboard,
   AsyncStorage
@@ -107,7 +106,7 @@ const LoginScreen = ({
             onChange={text => setFieldValue("email", text)}
           />
           <InputDefault
-            customize={errors.email ? { borderColor: "red" } : null}
+            customize={errors.password ? { borderColor: "red" } : null}
             placeholder="Senha"
             secure
             value={password}

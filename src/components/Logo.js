@@ -1,11 +1,11 @@
 import React from "react";
 import { View, Image, StyleSheet, Text } from "react-native";
 
-function Logo({ uri }) {
+function Logo({ uri, showTitle = true }) {
   return (
     <View style={styles.logoContainer}>
       <Image source={{ uri }} style={styles.image} />
-      <Text style={styles.logoTitle}>Finder</Text>
+      {showTitle ? <Text style={styles.logoTitle}>Finder</Text> : null}
     </View>
   );
 }
@@ -14,7 +14,7 @@ const styles = StyleSheet.create({
   logoContainer: {
     justifyContent: "center",
     padding: 10,
-    flex: 1,
+    flex: 1
   },
   image: {
     width: 100,
@@ -22,10 +22,8 @@ const styles = StyleSheet.create({
   },
   logoTitle: {
     fontSize: 30,
-    textAlign: "center",
-  },
+    textAlign: "center"
+  }
 });
 
-export {
-    Logo
-}
+export { Logo };
