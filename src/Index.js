@@ -20,7 +20,8 @@ function Routes() {
 						animationTypeForReplace: 'push',
 						cardShadowEnabled: true,
 						gestureDirection: 'horizontal',
-						gestureEnabled: true
+						gestureEnabled: true,
+						headerShown: false
 					}}
 				/>
 				<Stack.Screen
@@ -31,7 +32,8 @@ function Routes() {
 						animationTypeForReplace: 'push',
 						cardShadowEnabled: true,
 						gestureDirection: 'horizontal',
-						gestureEnabled: true
+						gestureEnabled: true,
+						headerShown: false
 					}}
 				/>
 			</Stack.Navigator>
