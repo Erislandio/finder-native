@@ -5,6 +5,7 @@ export const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
+    width: '100%'
   },
   signText: {
     color: "#f9a501",
@@ -18,7 +19,7 @@ export const styles = StyleSheet.create({
   },
   form: {
     flex: 1,
-    justifyContent: "center",
+    justifyContent: "flex-start",
     alignItems: "center",
     width: "100%",
     padding: 20
